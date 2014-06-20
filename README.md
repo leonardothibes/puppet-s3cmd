@@ -7,7 +7,8 @@ A puppet module to manage s3cmd.
 Install s3cmd to "vagrant" user:
 ```puppet
 node default {
-	class {'vagrant':
+	class {'s3cmd':
+		user       => 'vagrant',
 		access_key => 'ACCESS_KEY',
 		secret_key => 'SECRET_KEY',
 	}
@@ -18,7 +19,8 @@ Purge completly s3cmd:
 ```puppet
 node default {
 	class {'s3cmd':
-		ensure => absent
+		ensure => absent,
+		user   => 'vagrant', # remove ".s3cmd" file in user's home.
 	}
 }
 ```
