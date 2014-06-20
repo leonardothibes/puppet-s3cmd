@@ -1,11 +1,11 @@
 name    'leonardothibes-s3cmd'
-version '0.1.0'
-source 'UNKNOWN'
-author 'leonardothibes'
-license 'Apache License, Version 2.0'
-summary 'UNKNOWN'
-description 'UNKNOWN'
-project_page 'UNKNOWN'
+author  'leonardothibes'
+version '1.0.0'
+license 'MIT'
+summary 'A puppet module to manage s3cmd.'
+description 'A puppet module to manage s3cmd.'
+source 'git://github.com/leonardothibes/puppet-s3cmd.git'
+project_page 'http://github.com/leonardothibes/puppet-s3cmd'
 
-## Add dependencies, if any:
-# dependency 'username/name', '>= 1.2.0'
+## Add dependencies:
+dependency 'leonardothibes/wget', '>= 1.0.0'
